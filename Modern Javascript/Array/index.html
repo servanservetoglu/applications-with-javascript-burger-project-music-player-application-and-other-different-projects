@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const sayilar = [1, 3, 12, 33, 44, 76];
+      const urunler = [
+        {urunAdi:"İphone 11",fiyat:12000},
+        {urunAdi:"İphone 12",fiyat:15000},
+        {urunAdi:"İphone 13",fiyat:18000},
+        {urunAdi:"İphone 13 Pro Max",fiyat:22000}
+      ];
+      // const teksayilar=[];
+
+      // for(let tek of sayilar){
+
+      //     if(tek%2===1){
+      //         teksayilar.push(tek);
+      //     }
+      // }
+
+            // const tekSayiKontrol = (sayi) => sayi % 2 === 1;
+
+            // const teksayilar = sayilar.filter(tekSayiKontrol);
+
+            // console.log(teksayilar);
+
+
+
+            // const teksayilar = sayilar.filter((sayi) => sayi % 2 === 1);
+            // const teksayilar = sayilar.map((sayi) => sayi % 2 === 1);
+
+            // const sonuc =urunler.map(urun=>urun.urunAdi);
+
+            // const filtrelenenUrunler=urunler.filter(urun=>urun.fiyat>=17000)
+            // const sonuc=filtrelenenUrunler.map(urun=>urun.urunAdi)
+
+            // const sonuc=urunler.filter(urun=>urun.fiyat>=17000).map(urun=>urun.urunAdi);
+      
+              // const sonuc=urunler.find(urun=>urun.fiyat>=12000);  //ilk ürünü gösterir
+              const sonuc=urunler.findIndex(urun=>urun.fiyat>=12000);  //ilk indeksi gösterir
+
+            console.log(sonuc);
+
+            
+    </script>
+  </body>
+</html>

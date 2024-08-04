@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //array destructuring
+
+        let user=["Şervan","Servetoğlu","kocaeli","izmit","41000"]
+
+        // let name=user[0];
+        // let surname=user[1];   artık bunun yerine
+
+
+        // let [firstname,surname]=user;
+        // let [firstname,surname]="Şervan Servetoğlu".split(" ");
+
+        // let [firstname,surname,city,town]=user;
+
+        // let [firstname,surname, ,town]=user;
+        // console.log(firstname,surname,town);
+
+
+        // let [firstname,surname,...adres]=user;
+        // console.log(firstname,surname,adres);
+
+        // console.log(firstname,surname,city,town);
+
+        //object destructuring
+
+
+
+        let urun={
+            marka:"Apple",
+            model:"Iphone 13",
+
+        }
+
+
+        let {marka,model,fiyat = 0,satisBilgisi=false}=urun;
+
+        console.log(marka,model,fiyat,satisBilgisi);
+
+        // function urunuGoster(marka,model,fiyat = 0,satisBilgisi=false){
+
+        //     console.log(marka,model,fiyat ,satisBilgisi)
+        // }
+        // urunuGoster("apple","iphone 12 pro")
+            
+        function urunuGoster(obj){
+
+            let {marka,model,fiyat = 0,satisBilgisi=false}=obj;
+}
+        urunuGoster(urun)
+
+    </script>
+</body>
+</html>

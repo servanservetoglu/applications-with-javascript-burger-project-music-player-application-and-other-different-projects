@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    //ES5
+    function selamlamaES5(){
+            console.log("merhaba")
+    };
+    selamlamaES5(); 
+    function isimleselamlamaES5(isim){
+        console.log("Merhaba"+isim)
+    };
+    isimleselamlamaES5("Şervan")
+    //Veya bir değişkene atayalım 
+
+    var selamamaisimleES5=function(isim){
+        console.log("Merhaba"+isim)
+    }
+    selamamaisimleES5("Şervan")
+    //ES6
+    
+    const selamlamaES6=()=> console.log("Merhaba") // kodun tek satırda yazılması lazım birden çok işlem yapılacak ise kırlangıç parantezi açılması gerek . Bir alt satırda da işlem yapılacak ise yine kırlangıç pparantezi açılması gerek 
+    selamlamaES6();
+    const isimleselamlamaES6=(isim)=>{console.log("merhaba"+isim)}
+    isimleselamlamaES6("şERVAN")
+
+    var toplamaES5=function(a,b){
+        return a+b;
+     }
+     console.log((10,20))
+
+     const toplamES6=(a,b)=>a+b; //basit tek satırlık kod ve zaten kendiliiğinden return eder
+     console.log(toplamES6(40,40))
+     const returntoplamES6=(a,b)=>{return a+b};// kırlangıç açıldı ise return eklenmelidir
+        console.log(returntoplamES6(100,100))
+</script>
+</html>
